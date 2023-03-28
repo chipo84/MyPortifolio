@@ -1,0 +1,683 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+$italic :'gotham italic';
+$semi-bold :'poppins semibold';
+$regular: 'gotham regular';
+$color: rgb(53, 51, 51);
+
+.banner {
+	background-image: url(./imgs/keybord\ .jpg);	
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-blend-mode: overlay;
+	height: 80vh;
+
+}
+
+
+.header {
+	display: flex;
+	flex-direction: row;
+
+	h2 {
+		color: white;
+		font-size: 12px;
+		padding-top: 20px;
+		padding-left: 20px;
+		margin-top: 3px;
+	}
+
+	ul {
+		display: flex;
+		flex-direction: row;
+		margin-left: 0px;
+		color: white;
+		padding-top: 20px;
+		font-size: 8px;
+	}
+
+	li {
+		padding: 10px; color: white;
+
+		&:hover {
+			color: black;
+		}
+	}
+}
+
+.body {
+	text-align: center;
+	color: white;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+
+	// margin-top: 100px;
+
+	h1 {
+		font-size: 20px; color: white;
+		// padding-top: 80px;
+		// margin-bottom: 80px;
+		line-height: 75px;
+		font-weight: 900;
+	}
+
+	h3 {
+		// padding-bottom: 100px;
+		font-size: 20px;
+		font-weight: 100;
+		font-family: $regular;
+	}
+	.body-inner{
+		margin-bottom: 280px;
+	}
+
+}
+
+.my-btn {
+	padding: 10px;
+	font-size: 30px;
+	// width: 20%;
+	// height: 50px;
+	text-align: center;
+	color: white;
+	background-color: red;
+	border: rgb(228, 227, 227); 
+	border-radius: 0px;
+	&:hover {
+		color: black;
+	}
+}
+
+.about {
+	background-color: white;
+	background-size: cover;
+	height: 1100px;
+
+	h1 {
+		text-align: center;
+		flex-direction: column;
+		font-size: 20px;
+		padding: 80px;
+		color: rgb(1, 1, 1);
+		margin-top: 20px;
+		padding: 30px;
+	}
+
+	#chichie {
+		margin-top: 10px;
+		height: 10%;
+		padding-left: 0px;
+		justify-content: center;
+		width: 100%;
+	}
+
+	p {
+		text-align: center;
+		font-size: 20px;
+		color: rgb(1, 1, 1);
+		margin-bottom: 70px;
+	}
+
+}
+
+.projects h1 {
+	text-align: center;
+	font-size: 20px;
+	margin-bottom: 50px;
+	font-family: 'poppins semibold';
+	margin-top: 80px;
+
+}
+
+
+.contact {
+background-color: black;
+color: white;
+background-size: 100vh;
+text-align: center;
+font-size: 20px;
+margin-top: 40px;
+}
+
+h2 {
+margin-top: 40px;
+padding: 30px;
+}
+
+.contact p {
+font-style: italic;
+margin-top: 20px;
+}
+
+form {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-left: 10px;
+
+input {
+	width: 195px;
+	height: 60px;
+	flex-direction: row;
+}
+
+padding: 10px;
+margin: 20px 20px 0 20px;
+}
+
+#rr {
+width: 900px;
+height: 300px;
+margin: 10px;
+}
+
+.my-btn {
+// height: 50px;
+// width: 20%;
+padding: 15px;
+border-radius: 0px;
+background-color: red;
+color: white;
+text-align: center;
+font-size: 10px;
+// margin-top: 40px;
+
+&:hover {
+	color: black;
+}
+
+text-align: center;
+font-size: 20px;
+margin-top: 40px;
+}
+
+.footer {
+background-color: white;
+color: black;
+line-height: 30px;
+padding-top: 60px;
+padding-bottom: 60px;
+
+h4 {
+	font-size: 25px;
+	font-family: $regular;
+}
+
+p {
+	font-family: arial;
+	color: black;
+	font-size: 20px;
+}
+
+button {
+	background-color: black;
+	color: white;
+	width: 30%;
+	height: 50px;
+	border-radius: 10px;
+	font-size: 18px;
+	
+
+}
+
+}
+
+.last {
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 20px;
+font-family: $regular;
+margin-top: 2px;
+background-color: red;
+height: 100px;
+color: white;
+
+span{
+	font-size: 20px;
+	font-family: $semi-bold;
+}
+}
+
+
+
+
+
+
+
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 568px) {}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {}
+
+
+
+
+
+
+
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	.banner {
+		
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-blend-mode: overlay;
+		height: 80vh;
+
+	}
+
+
+	.header {
+		display: flex;
+		flex-direction: row;
+
+		h2 {
+			color: white;
+			font-size: 20px;
+			padding-top: 20px;
+			padding-left: 80px;
+			margin-top: 3px;
+		}
+
+		ul {
+			display: flex;
+			flex-direction: row;
+			margin-left: 600px;
+			color: white;
+			padding-top: 20px;
+			font-size: 20px;
+		}
+
+		li {
+			padding: 10px;
+
+			&:hover {
+				color: red;
+			}
+		}
+	}
+
+	.body {
+		text-align: center;
+		color: white;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		justify-content: center;
+		display: flex;
+		align-items: center;
+
+		// margin-top: 100px;
+
+		h1 {
+			font-size: 20px;
+			// padding-top: 80px;
+			// margin-bottom: 80px;
+			line-height: 75px;
+			font-weight: 900;
+		}
+
+		h3 {
+			// padding-bottom: 100px;
+			font-size: 20px;
+			font-weight: 100;
+			font-family: $regular;
+		}
+
+	}
+
+	.my-btn {
+		padding: 10px;
+		font-size: 30px;
+		// width: 20%;
+		// height: 50px;
+		text-align: center;
+		color: black;
+		background-color: white;
+		border: rgb(228, 227, 227);
+		border-radius: 0px;
+		// margin: -31px;
+
+		&:hover {
+			color: black;
+		}
+	}
+
+	.about {
+		background-color: white;
+		background-size: cover;
+		height: 80vh;
+
+		h1 {
+			text-align: center;
+			flex-direction: column;
+			font-size: 20px;
+			padding: 80px;
+			color: rgb(1, 1, 1);
+			margin-top: 20px;
+			padding: 30px;
+		}
+
+		#chichie {
+			margin-top: 10px;
+			height: 10%;
+			padding-left: 200px;
+			justify-content: center;
+			width: 40%;
+		}
+
+		p {
+			text-align: center;
+			font-size: 20px;
+			color: rgb(1, 1, 1);
+			margin-bottom: 70px;
+		}
+
+	}
+
+	.projects h1 {
+		text-align: center;
+		font-size: 20px;
+		margin-bottom: 50px;
+		font-family: 'poppins semibold';
+		margin-top: 80px;
+
+	}
+}
+
+.contact {
+	background-color: black;
+	color: white;
+	background-size: 100vh;
+	text-align: center;
+	font-size: 20px;
+	margin-top: 40px;
+}
+
+h2 {
+	margin-top: 40px;
+	padding: 30px;
+}
+
+.contact p {
+	font-style: italic;
+	margin-top: 20px;
+}
+
+form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 10px;
+
+	input {
+		width: 450px;
+		height: 60px;
+		flex-direction: row;
+	}
+
+	padding: 10px;
+	margin: 20px 20px 0 20px;
+}
+
+#rr {
+	width: 900px;
+	height: 300px;
+	margin: 10px;
+	padding-top: 0px;
+}
+
+.my-btn {
+	// height: 50px;
+	// width: 20%;
+	padding: 15px;
+	border-radius: 0px;
+	background-color: red;
+	color: white;
+	text-align: center;
+	font-size: 10px;
+	// margin-top: 40px;
+
+	&:hover {
+		color: black;
+	}
+
+	text-align: center;
+	font-size: 20px;
+	margin-top: 40px;
+}
+
+.footer {
+	background-color: white;
+	color: black;
+	line-height: 30px;
+	padding-top: 60px;
+	padding-bottom: 60px;
+
+	h4 {
+		font-size: 25px;
+		font-family: $regular;
+	}
+
+	p {
+		font-family: arial;
+		color: black;
+		font-size: 20px;
+	}
+
+	button {
+		background-color: black;
+		color: white;
+		width: 30%;
+		height: 50px;
+		border-radius: 10px;
+		font-size: 18px;
+		
+
+	}
+
+}
+
+.last {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+	font-family: $regular;
+	margin-top: 2px;
+	background-color: red;
+	height: 100px;
+	color: white;
+
+	span{
+		font-size: 20px;
+		font-family: $semi-bold;
+	}
+}
+
+
+
+
+
+// .last{ justify-content : center;  font-size: 40px; background-color: white; background-size: 40px; padding-right: -60px;
+// 	h5{margin-left: 30px; font-size: 30px;}
+// 	.icons{ padding: 40px; display: flex;  }
+// 	column {display: flex; padding-right: 50px;}
+// 	.footer{display: flex; justify-content: space-between; }
+// 	.bottom{ display: flex; text-align: center; align-items: center; justify-content: center;background-color: white;background-size: 40px; }
+
+
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+
+
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+
+/* Set width to make card deck cards 100% width */
+@media (max-width: 950px) {}
